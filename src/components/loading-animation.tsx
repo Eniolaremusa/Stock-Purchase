@@ -35,7 +35,6 @@ const GROUP_MOMENTUM_TRANSITION = {
 export interface LoadingAnimationProps {
   className?: string;
   stockLogoSrc?: string;
-  stockLogoClassName?: string;
   onTransitionStart?: () => void;
   onComplete: () => void;
 }
@@ -49,7 +48,6 @@ function wait(ms: number) {
 export function LoadingAnimation({
   className,
   stockLogoSrc = "/assets/lilly-logo.png",
-  stockLogoClassName,
   onTransitionStart,
   onComplete,
 }: LoadingAnimationProps) {
@@ -184,10 +182,7 @@ export function LoadingAnimation({
         </div>
 
         <motion.div
-          className={cn(
-            "relative size-[40px] shrink-0 overflow-hidden rounded-[142.857px] bg-[#687387]",
-            stockLogoClassName
-          )}
+          className="relative size-[40px] shrink-0 overflow-hidden rounded-[142.857px]"
           initial={{ x: 0 }}
           animate={stockControls}
         >
@@ -196,6 +191,7 @@ export function LoadingAnimation({
             alt=""
             width={43}
             height={43}
+            placeholder="empty"
             className="pointer-events-none absolute left-1/2 top-1/2 size-[42.857px] max-w-none -translate-x-1/2 -translate-y-1/2 object-cover"
           />
         </motion.div>

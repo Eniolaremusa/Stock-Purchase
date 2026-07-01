@@ -117,7 +117,6 @@ export function PurchaseScreen() {
           <PurchaseLoadingScreen
             shares={purchasedShares}
             stockLogoSrc={selectedStock.logoSrc}
-            stockLogoClassName={selectedStock.logoClassName}
             onTransitionStart={handleLoadingTransitionStart}
             onComplete={handleLoadingComplete}
           />
