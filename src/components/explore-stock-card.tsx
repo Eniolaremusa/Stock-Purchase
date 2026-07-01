@@ -62,11 +62,11 @@ export function ExploreStockCard({ stock, onClick }: ExploreStockCardProps) {
           </p>
           <div className="flex items-center gap-[2px]">
             <Image
-              src="/assets/arrow-up.svg"
+              src={trendUp ? "/assets/arrow-up.svg" : "/assets/arrow-down.svg"}
               alt=""
               width={8}
               height={8}
-              className={cn("size-[8px] shrink-0", !trendUp && "rotate-180")}
+              className="size-[8px] shrink-0"
             />
             <p
               className={cn(
