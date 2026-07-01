@@ -1,4 +1,5 @@
-Stock Purchase Flow
+##Stock Purchase Flow
+
 An interaction study built around a single idea: buying a stock should end in a moment that feels like something, not just a confirmation screen.
 Instead of a plain success state, completing a purchase generates a stock certificate, and downloading it triggers a genie-style collapse where the certificate deforms and shrinks into the download button, the way a window minimizes on macOS.
 What it does
